@@ -327,6 +327,7 @@ section.writing li {
 
 section.writing a {
     text-decoration: none;
+    font-family: "pt-sans",sans-serif;
     color: #2F2A29
 }
 
