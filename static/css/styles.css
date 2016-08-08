@@ -330,6 +330,10 @@ section.writing a {
     color: #2F2A29
 }
 
+section.writing i {
+    color: #e62e00 ;
+}
+
 section.writing a:hover {
     color: #e62e00
 }
