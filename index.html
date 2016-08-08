@@ -1,451 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+	<title>Michael Bamesberger</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	
+	<script src="https://use.typekit.net/etk7xqn.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio Site">
-    <meta name="author" content="Michael Bamesberger">
-
-    <title>Michael Bamesberger</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<script src="/static/js/responsive-nav.min.js"></script>
+	<link rel="stylesheet" href="/static/css/styles.css">
 </head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Michael Bamesberger</h1>
+			<nav>
+				<ul>
+					<li><a href="/" class="active">Portfolio</a></li>
+					<li><a href="/static/assets/Resume.pdf">Resume</a></li>
+					<li><a href="https://twitter.com/michaelbames">Twitter</a></li>
+					<li><a href="https://github.com/mbamesb2">GitHub</a></li>
+				</ul>
+			</nav>
+			<div id="navToggle" class="closed" aria-hidden="true">
+				<span class="hamburger">&#9776</span>
+			</div>
+		</header>
+		<div class="about">
+			<p>I recently graduated with a bachelor's degree in computer science from Oregon State University. For the last couple years, I worked as a journalist at the <a href="http://www.journalstar.com">Lincoln Journal Star</a>, the <a href="http://www.omaha.com">Omaha World-Herald</a> and <a href="http://www.oregonlive.com">The Oregonian</a>. Now, I'm interested in technology and software development.</p>
+		</div>
+		<div class="portfolio">
+			<section class="code">
+				<h2>Class and personal projects</h2>
+				<div class="published">
+					<div class="item">
+						<a href="http://webcrawlerapi.appspot.com">
+						<h3 class="title">Graphical Web Crawler</h3>
+						<img src="/static/img/crawler.jpg">
+						</a>
+						<p class="explain">I designed and built a graphical web crawler application with two classmates for a Software Projects course. The user enters a starting URL, as well as the number of links they wish to crawl, and hits submit. The application then returns a tree-like visualization of the crawl path.</p>
+						<p class="explain">The crawler was built using Python, and the front-end visualization was built using D3.js. The application was built on top of the Google App Engine.</p>
+					</div>
+					<div class="item">
+						<a href="http://bbbllc-1378.appspot.com">
+						<h3 class="title">Business Jargon Website</h3>
+						<img src="/static/img/business.jpg">
+						</a>
+						<p class="explain">This site was an experiment in working with Parallax.js and ScrollReveal.js. The site, built on the Google App Engine, also makes heavy use of Bootstrap. The project was adapted from the <a href="http://pooperapp.com">Pooper App</a>, a fake app that has a really sleek web design. I wanted to see how it worked, so I created this site for a fake business, BBB LLC, and filled the sections with business jargon. </p>
+					</div>
+					<div class="item">
+						<a href="http://bames-assignment-two-1361.appspot.com/">
+						<h3 class="title">Workout Tracker</h3>
+						<img src="/static/img/workout2.jpg">
+						</a>
+						<p class="explain">For a mobile and cloud computing class, I created this simple workout tracker application to test out the Google Datastore NoSQL database. The user is able to add a workout routine, view their routines and edit individual routines easily. </p>
+						<p class="explain">The application was built with Bootstrap, HTML, CSS and Python, on top of the Google App Engine.</p>
+					</div>
+					<div class="item">
+						<a href="https://twitter.com/stclairbus">
+						<h3 class="title">Twitter Bot</h3>
+						<img src="/static/img/twitterbot.jpg">
+						</a>
+						<p class="explain">This twitter bot represents the bus stop near my apartment in Portland, and tweets when the 15 and 20 bus lines are arriving. The bot was built with Python and the <a href="http://www.tweepy.org">Tweepy</a> library, using an API ran by my transit agency,<a href="http://trimet.org"> TriMet</a>. The bot runs on Heroku. </p>
+					</div>
+					<div class="item">
+						<a href="election.jpg">
+						<h3 class="title">Election Map</h3>
+						<img src="/static/img/election.jpg">
+						</a>
+						<p class="explain">I created a state-level election map, as well as a how to guide, using <a href="http://leafletjs.com">Leaflet.js</a>. I love data and maps, so Leaflet.js was a very interesting library to learn about. The assignment called for the library to be intended for mobile use, so I tried hard to manipulate the Leaflet.js library into some mobile friendly. As a result, the user must tap and hold onto a state in order to see the election data. </p>
+					</div>
+					<div class="item">
+						<a href="https://github.com/mbamesb2/Usability-Design/blob/34cc6c6115528dfad988baaf80873fb6b82d4e9e/CS352_Fall2015_Team_10.pdf">
+						<h3 class="title">Usability: Point of Sale App</h3>
+						<img src="/static/img/pos.jpg">
+						</a>
+						<p class="explain">Using prototyping tool <a href="http://balsamiq.com">Balsamiq</a>, a group of classmates and I created a wireframe for a check-splitting app to be used by both diners and restaurants. The version of the app used by diners would allow them to split their bill with other diners as they wish, as well as add a tip, with a few taps. We focused on making the application quick, easy to use and usable.</p>
+					</div>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Michael Bamesberger</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About Michael</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Michael Bamesberger</span>
-                        <hr class="star-light">
-                        <span class="skills">CS Grad. Portland, Oregon.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Classwork/Projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/crawler.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/business.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/patient.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/election.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/workout2.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/inbox.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/twitterbot.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Michael</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>Hi. I'm Michael.</p>
-                    <br>
-                    <p>I used to write for newspapers, but now I write code. In June, I graduated from Oregon State University with a computer science degree, and now I'm looking for a place to work and grow.</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <ul class="list-inline text-center">
-                            <li>
-                                <a href="http://www.twitter.com/michaelbames" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/michaelbames" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                    <p>I can best be reached by email:</p>
-                    <p>michaelbamesberger@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Michael Bamesberger 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Graphical Web Crawler</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/crawler.jpg" class="img-responsive img-centered" alt="">
-                            <p>I built a web crawler application with two other students. The user enters a beginning URL, chooses depth-first or breadth-first search, and specifies a number of links. </p>
-                            <p>The application was built on the Google App Engine, using Python, Javascript, CSS3 and HTML5.</p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://webcrawlerapi.appspot.com">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Patient Finder / API</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/patient.jpg" class="img-responsive img-centered" alt="">
-                            <p>This application is a simple interface to access a separate near-RESTful API.
-                            Users are forced to sign in to a Google Account, and are then able to Add or Search for patients in the database.
-                            Only administrators to the site are able to Delete from the database.</p>
-                            <p>The application was built on the Google App Engine, using Python, Javascript, HTML, CSS and Bootstrap.</p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://mobile-cloud-bamesberger.appspot.com">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>How-To Election Map</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/election.jpg" class="img-responsive img-centered" alt="">
-                            <p>I wrote a how-to guide to using the Leaflet.js javascript library, as well as GeoJSON data, to create an election map.
-                            The guide discusses how to use geolocation in the browser to set a marker on the user's current location. In addition, the map
-                            allows the user to tap and hold on a state to reveal the results from the 2012 presidential election.</p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://how-to-bamesberger.appspot.com">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Workout Tracker</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/workout2.jpg" class="img-responsive img-centered" alt="">
-                            <p>This application allows users to input data about their workout, view the workouts they have inputted, and then edit
-                            their workout information. </p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://bames-assignment-two-1361.appspot.com">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Angular Inbox</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/inbox.jpg" class="img-responsive img-centered" alt="">
-                            <p>This project was my first experiment using Angular.js. It pulls messages from JSON, and allows the user to read or delete them. This project was adapted from a tutorial on Thinkful.com.</p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://mbamesb2.github.io/angularTest">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Twitter Bot</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/twitterbot.jpg" class="img-responsive img-centered" alt="">
-                            <p>This bot, built with Python, represents the bus stop near my house. It makes a call to my local transit agency's API, then calculates the number of minutes until the bus arrives at the stop.</p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://twitter.com/stclairbus">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Parallax Experiment / Business Jargon Site</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/business.jpg" class="img-responsive img-centered" alt="">
-                            <p>This application was an experiment in using the <a href="http://pixelcog.github.io/parallax.js/">Parallax.js</a> effect on a single-page website. I based the site around a fake business, and filled in the page with corporate buzzwords. </p>
-                            <p>This page was built using Bootstrap, Parallax.js, JQuery, Javascript, CSS, HTML and a bit of Python, on top of the Google App Engine. </p>
-                            <ul class="list-inline item-details">
-                                <li><a class="btn btn-primary btn-large" href="http://bbbllc-1378.appspot.com">Click here to see the project</a></li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
+				</div>
+			</section>
+		</div>
+		
+	</div>
+	<div class="writingcontainer">
+		<section class="writing">
+				<h2>Writing</h2>
+					<ul>
+						<li><a href="http://www.oregonlive.com/wilsonville/index.ssf/2015/02/revmedx.html">Startup uses tiny, injectable sponges to save lives on the battlefield</a></li>
+						<li><a href="http://www.oregonlive.com/oregon-city/index.ssf/2014/12/blue_heron_developer_told_to_s.html">Developer ordered to stop work on old Olympia brewery for environmental violations</a></li>
+						<li><a href="http://www.oregonlive.com/happy-valley/index.ssf/2014/12/happy_valley_officials_disappo.html">Police service in jeopardy after levy fails by just one vote</a></li>
+						<li><a href="http://www.oregonlive.com/clackamascounty/index.ssf/2014/09/36_pit_fire_displaced_neighbor.html">Displaced by wildfire, neighbors spend restless night in church shelter</a></li>
+						<li><a href="http://www.oregonlive.com/lake-oswego/index.ssf/2014/04/new_breast_milk_bank_in_lake_o.html">Controversial breast milk company pays mothers for their milk </a></li>
+						<li><a href="http://www.oregonlive.com/milwaukie/index.ssf/2014/08/milwaukie_bomber.html">The 'Lacey Lady' B-17 bomber, Milwaukie's longtime roadside attraction, comes down from its perch </a></li>
+						<li> <a href="http://journalstar.com/business/agriculture/adams-family-finds-green-in-garlic/article_36a5c545-d30b-593c-98d6-90bc612b5c80.html">Family finds green in garlic</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	<footer>
+		<div class="content"></div> 
+	</footer>
 </body>
-
 </html>
